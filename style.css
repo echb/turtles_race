@@ -1,0 +1,37 @@
+body{
+  background-color: #615d59;
+}
+.stopAt{
+  position: absolute;
+  border-bottom: solid 1px #000;
+  width: 100%;
+  left: 0;
+  bottom: 580px;
+}
+.startAt{
+  position: absolute;
+  border-bottom: solid 1px #000;
+  width: 100%;
+  left: 0;
+  bottom: 49px;
+}
+.turtle{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  bottom: 20%;
+  transition: left 1s ease, bottom 1s ease, transform .3s ease-out;
+}
+.restart{
+  position: absolute;
+  left: 50%;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.places{
+  list-style: decimal;
+}
