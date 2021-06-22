@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 body{
-  background-color: #615d59;
+  background-color: #272343;
+  font-family: 'Nunito', sans-serif;
 }
 .stopAt{
   position: absolute;
-  border-bottom: solid 1px #000;
+  transition: background-color .4s ease-out;
+  background-color: #fff;
+  height: 3px;
   width: 100%;
   left: 0;
   bottom: 580px;
+}
+.stopAtFinish{
+  background-color: #f00;
 }
 .startAt{
   position: absolute;
@@ -27,11 +34,12 @@ body{
 .restart{
   position: absolute;
   left: 50%;
-  background-color: antiquewhite;
+  background-color: #BAE8E8;
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 5px;
   cursor: pointer;
 }
 .places{
   list-style: decimal;
+  color: #fff;
 }

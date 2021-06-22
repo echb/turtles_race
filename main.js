@@ -1,6 +1,7 @@
 const turtleBox = document.querySelector('.turtleBox')
 const restart = document.querySelector('.restart')
 const places = document.querySelector('.places')
+const stopAtTag = document.querySelector('.stopAt')
 const colorTurtle = ['red', 'blue', 'green', 'white']
 const timeSpeed = 50
 const stopAt = 550
@@ -53,6 +54,7 @@ function startTurtles() {
         const randomMove = Math.floor(Math.random() * 40) + 1;
         moveY += randomMove
         if (moveY >= stopAt) {
+          stopAtTag.classList.add('stopAtFinish')
           moveY = 560
           turtle.style.transform = `translateY(${-moveY}px)`
           const placeLi = document.createElement('li')
@@ -69,6 +71,7 @@ function startTurtles() {
 
 function restartGAme() {
   restart.addEventListener('click', () => {
+    stopAtTag.classList.remove('stopAtFinish')
     turtleBox.innerHTML = ''
     places.innerHTML = ''
     createTurtles()
